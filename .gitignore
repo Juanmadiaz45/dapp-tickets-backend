@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Hardhat build artifacts
+artifacts/
+cache/
+typechain/
+coverage/
+
+# Hardhat Ignition (si estás usando deployments con Ignition)
+ignition/deployments/
+
+# Optional log files
+*.log
+
+# Env files (si tienes API keys u otras variables)
+.env
+
+# VSCode settings (si usas Visual Studio Code)
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
