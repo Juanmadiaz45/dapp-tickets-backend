@@ -40,6 +40,21 @@ contract EventManager {
     }
 
     /**
+     * @dev Returns the entire array of created event contract addresses.
+     * This allows the frontend to easily fetch all events.
+     */
+    function getAllEvents() public view returns (address[] memory) {
+        return allEvents;
+    }
+
+    /**
+     * @dev Returns the total number of events created.
+     */
+    function getEventsCount() public view returns (uint256) {
+        return allEvents.length;
+    }
+
+    /**
      * @dev Creates a new event by deploying a new EventTicket contract.
      * @param _name The name of the NFT collection.
      * @param _symbol The symbol for the NFT.
